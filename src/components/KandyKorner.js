@@ -1,8 +1,6 @@
 import React, {Component} from "react"
-import StoreLocations from "./StoreLocations"
-import Employees from "./Employees"
-import CandyTypes from "./CandyTypes"
-import IndividualCandies from "./IndividualCandies"
+import ApplicationViews from "./ApplicationViews"
+import NavBar from "./nav/NavBar"
 
 class KandyKorner extends Component {
 	state = {
@@ -16,9 +14,9 @@ class KandyKorner extends Component {
 		return (
 			<div>
 				<StoreLocations store={this.state.StoreLocations} />
-				<Employees employee={this.state.Employees} />
+				<Employees employees={this.state.Employees} />
 				<CandyTypes candyType={this.state.CandyTypes} />
-				<IndividualCandies candy={this.state.IndividualCandies} />
+				<IndividualCandies candies={this.state.IndividualCandies} />
 			</div>
 		)
 	}
