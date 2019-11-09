@@ -2,8 +2,9 @@ import {Route} from "react-router-dom"
 import React, {Component} from "react"
 import StoreLocations from "./StoreLocations"
 import Employees from "./Employees"
-import CandyTypes from "./CandyTypes"
 import IndividualCandies from "./IndividualCandies"
+
+// complete
 
 export default class ApplicationViews extends Component {
 	state = {
